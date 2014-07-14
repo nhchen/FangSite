@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <title>Fang - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="screen.css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Raleway|Montserrat|Open+Sans|Oswald' rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+    <span>How to Improve Your Everyday Life</span>
+    <ul>
+        <li class="header" style= "list-style:none"><a href="#about" style="text-decoration:none">Home</a></li>
+        <li class="header" style= "list-style:none"><a href="#skills" style="text-decoration:none">Guide to Walks</a></li>
+        <li class="header" style= "list-style:none"><a href="#reviews" style="text-decoration:none">Other Info</a></li>
+    </ul>
+</header>
+<section class="one" id="about">
+<img src="">
+
+    <div class="text1">
+        <h2>I'm Fang!<h2>
+        <p>Hi, my name is Fang and I'm here today to instruct you regarding how to improve your life as a dog in innumerable aspects and educate you about how I achieve success on a daily basis.  
+ </p>
+    </div>
+</section>
+
+<section class="two" id="skills">
+    <img src="Cartman2.jpg">
+    <div class="text2">
+        <h2>I like Money and Food.</h2>
+        <p>While it may be costly, I can assure you that my skills are unparalleled the entire universe.  I can help you with any problems, such as:</p>
+        <ul>
+        <li>A missing cat</li>
+        <li>having a cat you want to go missing</li>
+        <li>having a person you want to go missing</li>
+        <li>turning stuff into gold</li>
+    </ul>
+
+    </div>
+</section>
+
+<section class="three" id="reviews">
+    <img src="Cartman3.jpg">
+    <div class="text3">
+        <h2>I will go the distance for you!</h2>
+        <p>
+            Just check out these messages from my satisfied customers!
+<br><br>
+Kyle: Yeah one time, Cartman did a good job of finding my iPhone, but I still can't understand how he sleeps at night charging fifty bucks an hour for basically unskilled labor.
+<br><br>
+Stan: Well, he did get the job done after eating about 4 family sized bags of doritos which I payed for.
+</p>
+    </div>
+</section>
+
+<section class="four" id="contact">
+<img src="Cartman4.jpg">
+<div class="text4">
+<h2>Satisfaction guaranteed</h2>
+<p>I charge hourly and with a flat daily fee as well as expenses and snacks.  It's $50 an hour, a minimum of $100, and I eat a lot of snacks.  You can reach me by e-mail ( cwizdude@gmail.com ) or come over to my house at 908 Carpenter Rd, and I think I'll get a phone next Christmas, so I'll add that later.</p>
+</div>
+</section>
+</body>
+</html>
