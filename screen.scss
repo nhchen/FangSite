@@ -66,7 +66,7 @@ p{
 }
 
 section{
-  background-size: cover;
+  background-size: 70%;
   height: 100%;
     position: relative;
 }
@@ -79,10 +79,12 @@ div{
 
 li{
   list-style: disc;
-  margin-left: 40px;
-  margin-bottom: 10%;
-
+  margin-right: 40px;
+  margin-bottom: 5%;
+  display: inline-block;
+  margin-top: 3.5%;
 }
+
 
 header{
   position: fixed;
@@ -91,6 +93,14 @@ header{
   z-index: 50;
   background-color: rgba( 31, 58, 92, .5 );
   width: 100%;
+
+    span{
+  color: aqua;
+  font-size: 30px;
+  font-family: helvetica;
+  display: inline-block;
+  margin-left: 4%;
+}
 }
 
 
@@ -98,25 +108,16 @@ a{
   list-style: none;
   display: inline-block;
   color: #1020df;
-  font-size: 15px;
+  font-size: 17px;
   transition: all 500ms linear;
   font-family: 'Ubuntu'
-
 }
 
-header span{
-  color: aqua;
-  font-size: 22px;
-  font-family: helvetica;
-  display: inline;
-  padding-top: 50px;
-  margin-left: 5%;
-}
 
 a:hover{
   list-style: disc;
   color: #ff1020;
-  font-size: 17px;
+  font-size: 19px;
   text-shadow: 2px 2px 3px red;
 }
 
@@ -165,6 +166,9 @@ h2:hover{
   background-image: url("pic8.jpg");
 }
 
+.contenttitle{
+  font-size: 24px;
+}
 
 div{
     color: white;
@@ -178,7 +182,7 @@ div{
 }
 
 .text1{
-     top: 16%;
+     bottom: 16%;
     left: 10%;
 }
 
@@ -206,6 +210,52 @@ img{
   height: 100%;
   opacity: 0;
 }
+
+.content{
+  position: absolute;
+  max-width: 100%;
+}
+
+.contentnav{
+  margin: 0;
+}
+
+.upleft{
+  width: 49%;
+  height: 43%;
+  top: 80px;
+  left: 2%;
+}
+
+.contentul{
+  
+}
+
+@media screen and ( max-width: 1050px ){
+
+  header{
+    span{
+      font-size: 24px;
+
+    }
+  }
+
+  ul{
+    float: left;
+  }
+
+}
+
+@media screen and ( max-width: 680px){
+
+  header{
+    span{
+      font-size: 20px;
+    }
+  }
+
+}
+
 @media screen and ( max-width: 550px){
 
 .one{
@@ -231,6 +281,11 @@ div{
 img{
   opacity: 1;
   display: block;
+}
+
+.text1{
+  top: 57%;
+  left: 30%;
 }
 
 }
