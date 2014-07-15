@@ -121,29 +121,12 @@ a:hover{
   text-shadow: 2px 2px 3px red;
 }
 
-.text1:hover{
+.text:hover{
   border: 5px dashed red;
   font-family: 'Oswald';
   font-size: 19px;
 }
 
-.text2:hover{
-  border: 7px solid blue;
-  font-family: 'Raleway' ;
-  font-size: 19px;
-}
-
-.text3:hover{
-  font-family: 'Ubuntu';
-  font-size: 19px;
-  border: 6px dotted tan;
-}
-
-.text4:hover{
-  font-family: 'Open Sans';
-  font-size: 19px;
-  border: 4px solid peachpuff;
-}
 
 h2{
   font-size: 20px;
@@ -182,7 +165,7 @@ div{
 }
 
 .text1{
-     top: 16%;
+     bottom: 16%;
     left: 10%;
 }
 
@@ -214,6 +197,13 @@ img{
 .content{
   position: absolute;
   max-width: 100%;
+  padding: 20px;
+}
+
+.content:hover{
+  font-size: 27px;
+  border: 6px solid blue;
+
 }
 
 .contentnav{
@@ -225,18 +215,26 @@ img{
   height: 43%;
   top: 80px;
   left: 2%;
+  font-size: 24px;
+  line-height: 1.5em;
 }
 
-.contentul{
-  
+
+.walkingtip{
+  background-image: url("pic1.jpg");
+  background-size: 60%;
+  background-position: top left;
 }
 
-@media screen and ( max-width: 1050px ){
+.bot{
+
+}
+
+@media screen and ( max-width: 930px ){
 
   header{
     span{
       font-size: 24px;
-
     }
   }
 
@@ -244,7 +242,33 @@ img{
     float: left;
   }
 
+  .upleft{
+    top: 120px;
+  }
+
 }
+
+@media screen and (max-width: 900px){
+
+  .upleft{
+    height: 57%;
+  }
+
+  .content:hover{
+    font-size: 24.5px;
+  }
+}
+
+@media screen and (max-width: 750px){
+
+  .upleft{
+    height: 64%;
+    width: 85%;
+    background-size: 100%;
+  }
+}
+
+
 
 @media screen and ( max-width: 680px){
 
