@@ -101,6 +101,11 @@ header span {
   margin-left: 4%;
 }
 
+body {
+  background-image: url("backg.png");
+  background-repeat: repeat;
+}
+
 a {
   list-style: none;
   display: inline-block;
@@ -148,6 +153,10 @@ h2:hover {
   font-size: 24px;
 }
 
+.title {
+  margin-top: 10px;
+}
+
 div {
   color: white;
   border-radius: 8px;
@@ -189,11 +198,15 @@ img {
   position: absolute;
   max-width: 100%;
   padding: 20px;
+  font-size: 24px;
+  line-height: 1.5em;
 }
 
 .content:hover {
   font-size: 27px;
   border: 6px solid blue;
+  z-index: 50;
+  color: orange;
 }
 
 .contentnav {
@@ -202,11 +215,10 @@ img {
 
 .upleft {
   width: 49%;
-  height: 43%;
-  top: 80px;
+  height: 38%;
+  top: 12.5%;
   left: 2%;
-  font-size: 24px;
-  line-height: 1.5em;
+  position: absolute;
 }
 
 .walkingtip {
@@ -215,6 +227,78 @@ img {
   background-position: top left;
 }
 
+.bot {
+  bottom: 2.5%;
+  left: 2%;
+  height: 32%;
+  width: 50%;
+}
+
+.right {
+  bottom: 5%;
+  height: 75%;
+  right: 3%;
+  width: 37%;
+}
+
+.contpic {
+  opacity: .2;
+  position: absolute;
+  width: 45%;
+  height: 85%;
+}
+
+.contpic:hover {
+  opacity: .7;
+}
+
+.beach {
+  top: 7.5%;
+  right: 5%;
+}
+
+video {
+  position: absolute;
+  opacity: .2;
+}
+
+video:hover {
+  opacity: .7;
+}
+
+.bark {
+  bottom: 8%;
+  right: 6%;
+}
+
+@media screen and (max-width: 1135px) {
+  .content:hover {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .upleft {
+    top: 110px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .content {
+    position: relative !important;
+    display: block;
+    width: 65%;
+    margin: 20px auto;
+    top: initial;
+    left: initial;
+    bottom: initial;
+    right: initial;
+  }
+
+  .upleft {
+    top: 17%;
+    background-size: cover;
+    margin-bottom: 140px;
+  }
+}
 @media screen and (max-width: 930px) {
   header span {
     font-size: 24px;
@@ -222,10 +306,6 @@ img {
 
   ul {
     float: left;
-  }
-
-  .upleft {
-    top: 120px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -237,10 +317,18 @@ img {
     font-size: 24.5px;
   }
 }
+@media screen and (max-width: 846px) {
+  .bot {
+    height: initial;
+  }
+
+  .content {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 750px) {
   .upleft {
     height: 64%;
-    width: 85%;
     background-size: 100%;
   }
 }
@@ -269,6 +357,7 @@ img {
   img {
     opacity: 1;
     display: block;
+    height: 80%;
   }
 
   .text1 {
