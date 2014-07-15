@@ -179,10 +179,6 @@ div{
  bottom: 8%;
 }
 
-.text4{
-  top: 8%;
-  right: 10%;
-}
 
 *{
   transition: all 250ms linear;
@@ -192,6 +188,7 @@ img{
   width: 120%;
   height: 100%;
   opacity: 0;
+  position: absolute;
 }
 
 .content{
@@ -203,7 +200,6 @@ img{
 .content:hover{
   font-size: 27px;
   border: 6px solid blue;
-
 }
 
 .contentnav{
@@ -291,10 +287,6 @@ img{
 }
 
 .three{
-  background-image: none;
-}
-
-.four{
   background-image: none;
 }
 
