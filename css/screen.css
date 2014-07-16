@@ -37,6 +37,7 @@ ol, ul {
   list-style: none;
   float: right;
   margin-right: 5%;
+  padding: 0 !important;
 }
 
 blockquote, q {
@@ -83,6 +84,7 @@ li {
   margin-bottom: 5%;
   display: inline-block;
   margin-top: 3.5%;
+  float: right;
 }
 
 header {
@@ -98,7 +100,7 @@ header span {
   font-size: 30px;
   font-family: helvetica;
   display: inline-block;
-  margin-left: 4%;
+  padding-left: 4%;
 }
 
 body {
@@ -110,7 +112,7 @@ a {
   list-style: none;
   display: inline-block;
   color: #1020df;
-  font-size: 17px;
+  font-size: 20px;
   transition: all 500ms linear;
   font-family: "Ubuntu";
 }
@@ -118,7 +120,7 @@ a {
 a:hover {
   list-style: disc;
   color: #ff1020;
-  font-size: 19px;
+  font-size: 22px;
   text-shadow: 2px 2px 3px red;
 }
 
@@ -154,7 +156,7 @@ h2:hover {
 }
 
 .title {
-  margin-top: 20px;
+  margin-top: 1em;
 }
 
 div {
@@ -181,9 +183,10 @@ div {
 .text3 {
   left: 23%;
   bottom: 8%;
+  width: 400px;
 }
 
-* {
+img, video {
   transition: all 250ms linear;
 }
 
@@ -304,6 +307,12 @@ video:hover {
   width: 70%;
 }
 
+.selected {
+  color: red;
+  border-bottom: 3px solid red;
+  font-weight: bold;
+}
+
 .stuffs {
   bottom: 1.5%;
   height: 33.5%;
@@ -345,10 +354,6 @@ video:hover {
 @media screen and (max-width: 930px) {
   header span {
     font-size: 28px;
-  }
-
-  ul {
-    display: none;
   }
 }
 @media screen and (max-width: 900px) {
@@ -407,13 +412,27 @@ video:hover {
     height: 80%;
   }
 
+  a {
+    font-size: 16px;
+  }
+
+  a:hover {
+    font-size: 17px;
+  }
+
   .text1 {
-    top: 57%;
-    left: 30%;
+    top: 52%;
+    left: 10%;
     height: 30%;
+    width: 400px;
   }
 
   .text1:hover {
     height: 34%;
+  }
+
+  .fam, .hw {
+    max-height: 60%;
+    width: 50%;
   }
 }
