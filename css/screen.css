@@ -422,12 +422,12 @@ video:hover {
   .text1 {
     top: 52%;
     left: 10%;
-    height: 30%;
+    height: 34%;
     width: 400px;
   }
 
   .text1:hover {
-    height: 34%;
+    height: 39%;
   }
 
   .fam, .hw {
