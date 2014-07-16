@@ -73,8 +73,8 @@ section {
 
 div {
   font-family: arial, helvetica;
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 24px;
+  font-size: 19px;
 }
 
 li {
@@ -125,7 +125,7 @@ a:hover {
 .text:hover {
   border: 5px dashed red;
   font-family: 'Oswald';
-  font-size: 19px;
+  font-size: 23px;
 }
 
 h2 {
@@ -154,7 +154,7 @@ h2:hover {
 }
 
 .title {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 div {
@@ -246,6 +246,7 @@ img {
   position: absolute;
   width: 45%;
   height: 85%;
+  border-radius: 20px;
 }
 
 .contpic:hover {
@@ -271,9 +272,51 @@ video:hover {
   right: 6%;
 }
 
+.hw {
+  top: 7%;
+  right: 3%;
+  height: 86%;
+  width: 42%;
+}
+
+.fam {
+  top: 7%;
+  left: 3%;
+  width: 42%;
+  height: 86%;
+}
+
+.benice {
+  background-image: none;
+}
+
+.cute {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.carrot {
+  top: 4%;
+  height: 92%;
+  left: 15%;
+  width: 70%;
+}
+
+.stuffs {
+  bottom: 1.5%;
+  height: 33.5%;
+}
+
 @media screen and (max-width: 1135px) {
   .content:hover {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 1097px) {
+  ul {
+    float: left;
   }
 }
 @media screen and (max-width: 1055px) {
@@ -301,11 +344,11 @@ video:hover {
 }
 @media screen and (max-width: 930px) {
   header span {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   ul {
-    float: left;
+    display: none;
   }
 }
 @media screen and (max-width: 900px) {
@@ -334,10 +377,14 @@ video:hover {
 }
 @media screen and (max-width: 680px) {
   header span {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 550px) {
+  header span {
+    font-size: 20px;
+  }
+
   .one {
     background-image: none;
   }
@@ -363,5 +410,10 @@ video:hover {
   .text1 {
     top: 57%;
     left: 30%;
+    height: 30%;
+  }
+
+  .text1:hover {
+    height: 34%;
   }
 }
