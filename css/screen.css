@@ -159,7 +159,7 @@ h2:hover {
 
 div {
   color: white;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: rgba(0, 20, 0, 0.6);
   text-shadow: 2px 2px 4px #1414fa;
   width: 60%;
