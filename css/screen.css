@@ -317,6 +317,11 @@ video:hover {
   height: 33.5%;
 }
 
+img:last-of-type{
+  display: none !important;
+}
+}
+
 @media screen and (max-width: 1135px) {
   .content:hover {
     font-size: 24px;
