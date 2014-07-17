@@ -141,9 +141,6 @@ h2{
   color: aqua;
 }
 
-h2:hover{
-  font-size: 22px;
-}
 
 .one{
   background-image: url("pic2.JPG");
@@ -355,14 +352,15 @@ textarea{
   position: absolute;
   opacity:0;
   left: 250px;
+  color:blue;
 }
 
 .em{
-    top: 93px;
+    top: 146px;
 }
 
 .pw{
-    top: 172px;
+    top: 227px;
 }
 
 @mixin movedown($d){
@@ -387,9 +385,6 @@ button{
   box-shadow: 0 2px 3px 2px;
 }
 
-.reminder{
-  color: blue;
-}
 
 #walking + img{
   display: none;
