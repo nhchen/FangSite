@@ -1,3 +1,5 @@
+@import 'library';
+
 html, body, div, span, applet, object, iframe,
 h1, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -128,7 +130,7 @@ a:hover{
 }
 
 .text:hover{
-  border: 5px dashed red;
+  border: $borwid dashed red;
   font-family: 'Oswald';
   font-size: 23px;
 }
@@ -166,7 +168,7 @@ h2:hover{
 div{
     color: white;
     border-radius: 16px;
-    background-color: rgba( 0, 20, 0, .6);
+    background-color: $color2;
     text-shadow: 2px 2px 4px rgba( 20, 20, 250, 1);
     width: 60%;
     max-width: 280px;
@@ -212,7 +214,7 @@ img{
 
 .content:hover{
   font-size: 27px;
-  border: 6px solid blue;
+  border: $borwid solid blue;
   z-index: 50;
   color: orange;
 }
@@ -325,9 +327,73 @@ video:hover{
   height: 33.5%;
 }
 
-img:last-of-type{
-  display:none;
+.pure-form{
+  position: absolute;
+  padding: $borwid;
+  background-color: $color2;
+  border-radius: 10px;
+  top: 20%;
+  left: 30%;
+  width: 40%;
 }
+
+legend{
+  font-size: 24px;
+}
+
+textarea{
+  width: 100%;
+  height: 7em;
+}
+
+.reminder{
+  position: absolute;
+  opacity:0;
+  left: 250px;
+}
+
+.em{
+    top: 93px;
+}
+
+.pw{
+    top: 172px;
+}
+
+@mixin movedown($d){
+
+  -webkit-transform: translateY($d);
+     -moz-transform: translateY($d);
+          transform: translateY($d);
+
+}
+
+input:focus + .reminder{
+  transition: all 400ms linear;
+  opacity: 1;
+  @include movedown(18px)
+}
+
+.formcont{
+  margin: $borwid;
+}
+
+button{
+  box-shadow: 0 2px 3px 2px;
+}
+
+.reminder{
+  color: blue;
+}
+
+@media screen and (max-width: 1290px){
+  .header{
+    width: 27%;
+    margin-top: .6em;
+    margin-bottom: .6em;
+  }
+}
+
 @media screen and (max-width: 1135px){
   .content:hover{
     font-size: 24px;
@@ -359,6 +425,11 @@ img:last-of-type{
     right: initial;
   }
 
+  .pure-form{
+    width: 50%;
+    left: 25%;
+  }
+
   .upleft{
     top: 17%;
     background-size: cover;
@@ -387,6 +458,11 @@ img:last-of-type{
   }
 }
 
+  .pure-form{
+    width: 60%;
+    left: 20%;
+  }
+
 @media screen and ( max-width: 846px){
 
   .bot{
@@ -397,6 +473,11 @@ img:last-of-type{
     width: 85%;
   }
 
+  .pure-for{
+    width: 70%;
+    left: 15%;
+  }
+
 }
 
 @media screen and (max-width: 750px){
@@ -405,6 +486,24 @@ img:last-of-type{
     height: 64%;
     background-size: 100%;
   }
+
+  .header{
+    display: block;
+    width: 60%;
+    font-size: 24px;
+    margin-top: .3em;
+    margin-bottom: .3em;
+  }
+
+  header{
+    position: relative;
+  }
+
+  .pure-form{
+    width: 80%;
+    left: 10%;
+  }
+
 }
 
 
@@ -413,7 +512,7 @@ img:last-of-type{
 
   header{
     span{
-      font-size: 24px;
+      font-size: 21px;
     }
   }
 
@@ -472,5 +571,10 @@ a:hover{
   max-height: 60%;
   width: 50%  ;
 }
+
+.pure-form{
+    width: 90%;
+    left: 5%;
+  }
 
 }
