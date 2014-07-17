@@ -374,7 +374,7 @@ button {
   color: blue;
 }
 
-img:last-of-type {
+body img:last-of-type {
   display: none;
 }
 
