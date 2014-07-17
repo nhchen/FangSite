@@ -374,6 +374,10 @@ button {
   color: blue;
 }
 
+img:last-of-type {
+  display: none;
+}
+
 @media screen and (max-width: 1290px) {
   .header {
     width: 27%;
