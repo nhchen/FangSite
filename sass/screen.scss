@@ -157,6 +157,11 @@ h2:hover{
   background-image: url("pic8.JPG");
 }
 
+.three + img{
+  display:none !important;
+}
+
+
 .contenttitle{
   font-size: 24px;
 }
@@ -233,7 +238,7 @@ img{
 
 
 .walkingtip{
-  background-image: url("pic1.JPG");
+  background-image: url("pic1.jpg");
   background-size: 60%;
   background-position: top left;
 }
@@ -393,6 +398,7 @@ button{
     margin-bottom: .6em;
   }
 }
+
 
 @media screen and (max-width: 1135px){
   .content:hover{
