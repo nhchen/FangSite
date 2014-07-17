@@ -391,10 +391,9 @@ button{
   color: blue;
 }
 
-body img:last-of-type{
-  display:none;
+#walking + img{
+  display: none;
 }
-
 
 
 @media screen and (max-width: 1290px){
