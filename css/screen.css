@@ -151,6 +151,10 @@ h2:hover {
   background-image: url("pic8.JPG");
 }
 
+.three + img {
+  display: none !important;
+}
+
 .contenttitle {
   font-size: 24px;
 }
